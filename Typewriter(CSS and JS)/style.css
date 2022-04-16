@@ -1,0 +1,55 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+body{
+    background-color: black;
+    min-height: 100vh;
+}
+.iam{
+    color: white;
+    font-size: 55px;
+    padding: 15px;
+}
+.text{
+    color: white;
+    padding-right: 15px;
+    font-size: 55px;
+    border-bottom: 3px solid white;
+    margin-bottom: 12px;
+}
+.fl{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 50vh;
+    margin-bottom: 30px;
+}
+.sub{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 60px;
+    padding-bottom: 10px;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  }
+  

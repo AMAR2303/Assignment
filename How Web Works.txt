@@ -1,0 +1,25 @@
+				HOW DOES THE WEB WORK?
+
+We have heard “Client-Server Model” many times, but what does it exactly mean?
+
+Let’s start with Client. 
+Client is basically the device we use to access internet.
+Computers, Laptops etc. are considered clients when the person uses it to surf the web. 
+Here the web browser is the most important part.
+Each client has a unique IP address, which is used by servers to identify the client.
+Now, what’s a server?
+It is also a machine whose job is to respond to the requests made by the Client and return the web pages and other files.
+Let’s see how the web works.
+
+Whenever we enter a web address in the URL bar of the browser, the URL gets converted into IP address by DNS servers. 
+The browser then asks DNS(Domain Name System) servers with the help of our ISP(Internet Service Provider) to lookup
+for server linked to the URL we have entered.
+DNS identifies the server which serves the URL and sends the details(IP address of the destination server) to the browser 
+through the ISP. 
+The browser then connects with the server and sends a HTTP request to the server to get the web page of the URL 
+we entered.
+The web server searches for the web page and sends it back to the browser if it exists. 
+The browser then receives the web page and looks for other files/resources required and keeps on making
+request until every resource is obtained.
+After the above process gets over , the browser finally loads the page and the connection between client 
+and server is closed.

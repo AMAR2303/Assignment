@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #000000;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(3) infinite;
+}
+.sub{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+@keyframes slide {
+  100%{
+    top: -270px;
+  }
+  0% {width: 0;}
+  10% {width: 3.5em;}
+  30% {width: 0em;}
+  50% {width: 6.2em;}
+  60% {width: 0em;}
+  80% {width: 3em;}
+  100% {width: 0em;}
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+  text-decoration: underline;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;  
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 60px;
+  padding-bottom: 10px;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  }
+}

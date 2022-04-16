@@ -1,0 +1,44 @@
+html,body {
+    font-family: sans-serif;
+    padding: 3em 2em;
+    font-size: 18px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    
+}
+  
+h1,h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+h1 { font-size: 3.5em;
+    padding-left: 180px;
+    padding-top: 120px;
+}
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: center;
+}
+.txt-rotate{
+    border-bottom: 3px solid white;
+}
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 60px;
+    padding-bottom: 10px;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(255, 255, 255);
+    }
+  }
