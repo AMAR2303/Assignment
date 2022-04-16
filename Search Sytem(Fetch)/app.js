@@ -14,8 +14,7 @@ const searchcities= async searchText=>{
         matches=[];
         matchList.innerHTML='';
     }
-    outputHtml(matches);
-    // memop(matches);  
+    outputHtml(matches);  
 };
 
 const outputHtml=matches=>{
